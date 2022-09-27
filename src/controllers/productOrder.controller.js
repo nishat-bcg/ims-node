@@ -29,7 +29,18 @@ exports.getProductOrder = async (req, res) => {
 
 exports.createProductOrder = async (req, res) => {
   try {
-    const data = await ProductOrder.create({ ...req.body });
+    const order_date = new Date().toISOString();
+    const product = await Product.findByPk(req.body.product_id);
+    let total_price =
+      product.get('price') -
+      (product.get('price') * req.body.order_discount) / 100;
+
+    const data = await ProductOrder.create({
+      ...req.body,
+      order_date,
+      total_price,
+    });
+
     return res.json({
       message: productOrder.createProductOrder,
       data,
