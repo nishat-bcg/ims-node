@@ -9,8 +9,8 @@ Inventory management is how you track and control your business’ inventory as 
 - Nodejs
 - Express
 - Prettier (Code formatting)
-- Sequelize (Database management)
-- SQLite
+- Sequelize (Database management ORM)
+- SQLite (Database management ORM)
 
 ## Exercise Point Covered
 
