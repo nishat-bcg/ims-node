@@ -54,7 +54,7 @@ Runs the app in the development mode.\
 - UPDATE - [http://localhost:4000/api/v1/products/<:id>](http://localhost:4000/api/v<:id>/products/1)
 - DELETE - [http://localhost:4000/api/v1/products/<:id>](http://localhost:4000/api/v1/products/1)
 
-2. Product Order
+3. Product Order
 
 - GET - [http://localhost:4000/api/v1/productOrders](http://localhost:4000/api/v1/productOrders)
 - POST - [http://localhost:4000/api/v1/productOrders](http://localhost:4000/api/v1/productOrders)
