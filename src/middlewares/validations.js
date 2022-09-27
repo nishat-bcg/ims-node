@@ -20,7 +20,7 @@ exports.productValidation = (req, res, next) => {
 
 exports.productOrderValidation = (req, res, next) => {
   const schema = Joi.object({
-    order_discount: Joi.number().default(0),
+    order_discount: Joi.number().positive().default(0),
     product_id: Joi.number().positive().required(),
     customer_id: Joi.number().positive().required(),
   });
