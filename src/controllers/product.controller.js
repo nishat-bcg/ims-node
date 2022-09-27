@@ -10,6 +10,18 @@ exports.getProduct = async (req, res) => {
 
   try {
     const data = await Product.findAll({
+      include: [
+        {
+          model: Supplier,
+          as: 'supplier',
+          attributes: ['name'],
+        },
+        {
+          model: Category,
+          as: 'category',
+          attributes: ['name'],
+        },
+      ],
       order: [['id', 'DESC']],
       limit: +limit,
       offset: offset,

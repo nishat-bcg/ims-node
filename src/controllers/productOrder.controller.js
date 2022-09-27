@@ -9,6 +9,18 @@ exports.getProductOrder = async (req, res) => {
   const offset = (+page - 1) * +limit;
   try {
     const data = await ProductOrder.findAll({
+      include: [
+        {
+          model: Customer,
+          as: 'customer',
+          attributes: ['first_name', 'last_name', 'phone', 'email'],
+        },
+        {
+          model: Product,
+          as: 'product',
+          attributes: ['name', 'price'],
+        },
+      ],
       order: [['id', 'DESC']],
       limit: +limit,
       offset: offset,
