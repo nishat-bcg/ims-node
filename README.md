@@ -36,7 +36,7 @@ Performed CRUD operation on the all the following tables:
 
 `npm run start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 
 ## API Structure
 
