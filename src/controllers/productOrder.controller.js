@@ -67,8 +67,18 @@ exports.createProductOrder = async (req, res) => {
 
 exports.updateProductOrder = async (req, res) => {
   try {
+    const product = await Product.findByPk(req.body.product_id);
+    let total_price =
+      product.get('price') -
+      (product.get('price') * req.body.order_discount) / 100;
+
+    let body = {
+      ...req.body,
+      total_price,
+    };
+
     const data = await ProductOrder.update(
-      { ...req.body },
+      { ...body },
       {
         where: {
           id: req.params.id,
