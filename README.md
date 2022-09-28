@@ -44,19 +44,19 @@ Runs the app in the development mode.
 
 - GET - [http://localhost:4000/api/v1/customers](http://localhost:4000/api/v1/customers)
 - POST - [http://localhost:4000/api/v1/customers](http://localhost:4000/api/v1/customers)
-- PATCH - [http://localhost:4000/api/v1/customers/<:id>](http://localhost:4000/api/v<:id>/customers/1)
+- PUT - [http://localhost:4000/api/v1/customers/<:id>](http://localhost:4000/api/v<:id>/customers/1)
 - DELETE - [http://localhost:4000/api/v1/customers/<:id>](http://localhost:4000/api/v1/customers/1)
 
 2. Product
 
 - GET - [http://localhost:4000/api/v1/products](http://localhost:4000/api/v1/products)
 - POST - [http://localhost:4000/api/v1/products](http://localhost:4000/api/v1/products)
-- PATCH - [http://localhost:4000/api/v1/products/<:id>](http://localhost:4000/api/v<:id>/products/1)
+- PUT - [http://localhost:4000/api/v1/products/<:id>](http://localhost:4000/api/v<:id>/products/1)
 - DELETE - [http://localhost:4000/api/v1/products/<:id>](http://localhost:4000/api/v1/products/1)
 
 3. Product Order
 
 - GET - [http://localhost:4000/api/v1/productOrders](http://localhost:4000/api/v1/productOrders)
 - POST - [http://localhost:4000/api/v1/productOrders](http://localhost:4000/api/v1/productOrders)
-- PATCH - [http://localhost:4000/api/v1/productOrders/<:id>](http://localhost:4000/api/v<:id>/productOrders/1)
+- PUT - [http://localhost:4000/api/v1/productOrders/<:id>](http://localhost:4000/api/v<:id>/productOrders/1)
 - DELETE - [http://localhost:4000/api/v1/productOrders/<:id>](http://localhost:4000/api/v1/productOrders/1)

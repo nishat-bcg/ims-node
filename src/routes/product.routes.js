@@ -19,7 +19,7 @@ router
 
 router
   .route('/products/:id')
-  .patch(productValidation, notProductFound, updateProduct)
+  .put(productValidation, notProductFound, updateProduct)
   .delete(notProductFound, deleteProduct);
 
 module.exports = router;

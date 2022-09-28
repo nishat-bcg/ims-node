@@ -11,7 +11,7 @@ router
 
 router
   .route('/categories/:id')
-  .patch(category.updateCategory)
+  .put(category.updateCategory)
   .delete(category.deleteCategory);
 
 module.exports = router;
