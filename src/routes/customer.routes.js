@@ -15,7 +15,7 @@ router
 
 router
   .route('/customers/:id')
-  .patch(notCustomerFound, customerValidation, customer.updateCustomer)
+  .put(notCustomerFound, customerValidation, customer.updateCustomer)
   .delete(notCustomerFound, customer.deleteCustomer);
 
 module.exports = router;

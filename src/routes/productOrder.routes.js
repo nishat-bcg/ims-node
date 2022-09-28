@@ -14,7 +14,7 @@ router
 
 router
   .route('/productOrders/:id')
-  .patch(
+  .put(
     notProductOrderFound,
     productOrderValidation,
     productOrder.updateProductOrder

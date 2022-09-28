@@ -12,7 +12,7 @@ router
 
 router
   .route('/suppliers/:id')
-  .patch(notCategoryFound, supplier.updateSupplier)
+  .put(notCategoryFound, supplier.updateSupplier)
   .delete(supplier.deleteSupplier);
 
 module.exports = router;

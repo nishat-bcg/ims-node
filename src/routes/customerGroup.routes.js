@@ -11,7 +11,7 @@ router
 
 router
   .route('/customerGroups/:id')
-  .patch(customerGroup.updateCustomerGroup)
+  .put(customerGroup.updateCustomerGroup)
   .delete(customerGroup.deleteCustomerGroup);
 
 module.exports = router;
