@@ -28,6 +28,7 @@ module.exports = {
       email: {
         type: Sequelize.STRING,
         allowNull: false,
+        unique: true,
       },
       group_id: {
         type: Sequelize.INTEGER,
